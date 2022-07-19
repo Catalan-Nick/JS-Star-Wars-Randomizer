@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+@font-face {font-family: "StarJedi"; src:url("star-jedi_[allfont.net].ttf") format("truetype")}
+
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2386&q=80);
+    background-size: cover;
+    background-attachment: fixed;
+    color: gold;
+    font-family: "StarJedi";
+}
+* {
+    box-sizing: border-box;
+}
+
+.container, header, #poster{
+    display: flex;
+    flex-wrap: wrap;
+}
+header{
+    flex: 1 1 100%;
+    padding: 10px;
+    background-color: black;
+    border-bottom: 2px double gold;
+    justify-content: center;
+}
+#logo, #button, #credit{
+    flex: 1 1 30%;
+    display: flex;
+
+}
+#logo img{
+    max-width: 200px;
+}
+
+#button{
+    width: 20px;
+    height: 80px;
+    border: 2px double gold;
+    align-self: center;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#credit{
+    justify-content: right;
+    align-self: flex-end;
+}
+#credit a{
+    color: gold;
+    text-decoration: none;
+}
+aside, main{
+    padding-top: 20px;
+}
+aside{
+    flex: 0 1 20%;
+    padding: 20px;
+    border-right: 2px double gold;
+    height: 100vh;
+}
+main{
+    flex: 1 0 80%;
+}
+#title{
+    text-align: center;
+
+}
+#poster{
+    justify-content: center;
+}
+#poster img{
+    max-height: 550px;
+}
